@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NovelController : MonoBehaviour
 {
-    List<string> data = new List<string>();
+    List<string> data;
 
     int progress = 0;
 
@@ -22,7 +22,14 @@ public class NovelController : MonoBehaviour
     }
 
     void LoadChapterFile(string fileName) {
-        data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + fileName);
+        // data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + fileName);
+        // data = FileManager.LoadFile(FileManager.savPath + "Resources/Story/" + fileName);
+
+        var file = Resources.Load<TextAsset>("Story/introduction");
+        var content = file.text;
+        var AllWords = content.Split('\n'); 
+        data = new List<string>(AllWords);
+
         progress = 0;
     }
 

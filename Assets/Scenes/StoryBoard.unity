@@ -266,7 +266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: Speech
+  m_Text: Press [right] to continue...
 --- !u!222 &311201087
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -575,7 +575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Speaker name
+  m_Text: Welcome!
 --- !u!222 &871306046
 CanvasRenderer:
   m_ObjectHideFlags: 0
