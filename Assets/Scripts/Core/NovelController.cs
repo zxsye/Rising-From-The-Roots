@@ -37,6 +37,10 @@ public class NovelController : MonoBehaviour
         if (dialogueAndActions.Length == 3) {
             HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
             HandleEventsFromLine(dialogueAndActions[2]);
+        } else if (dialogueAndActions.Length == 4) {
+            HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
+            HandleEventsFromLine(dialogueAndActions[2]);
+            HandleEventsFromLine(dialogueAndActions[3]);
         } else {
             HandleEventsFromLine(dialogueAndActions[0]);
         }
@@ -100,13 +104,35 @@ public class NovelController : MonoBehaviour
         if (data[0] == "turnOff") {
             TurnOff(data[1]);
         }
-        if (data[0] == "echoSad") {
-
+        if (data[0] == "EchoSurprised") {
+            EchoSurprised();
+        }
+        if (data[0] == "EchoNeutral") {
+            EchoNeutral();
+        }
+        if (data[0] == "EchoHappy") {
+            EchoHappy();
+        }
+        if (data[0] == "SetTNarcissus") {
+            SetTNarcissus(data[1]);
         }
     }
 
     void EchoHappy() {
         Character c = CharacterManager.instance.GetCharacter("Echo");
+        c.SetSprite("happy");
+    }
+
+    void EchoNeutral() {
+        // print("Getting echo neutral");
+        Character c = CharacterManager.instance.GetCharacter("Echo");
+        c.SetSprite("neutral");
+    }
+
+    void EchoSurprised() {
+        // print("Getting echo surprised");
+        Character c = CharacterManager.instance.GetCharacter("Echo");
+        c.SetSprite("surprised");
     }
 
     void TurnOff(string characterName) {
@@ -115,6 +141,11 @@ public class NovelController : MonoBehaviour
         character.TurnOnOff(false);
     }
 
+    void SetTNarcissus(string type) {
+        Character c = CharacterManager.instance.GetCharacter("TNarcissus");
+        c.TurnOnOff(true);
+        c.SetSprite(type);
+    }
 
     void Command_SetLayerImage(string data, BCFC.LAYER layer) {
         string texName = data.Contains(",") ? data.Split(',')[0] : data;
