@@ -116,6 +116,9 @@ public class NovelController : MonoBehaviour
         if (data[0] == "SetTNarcissus") {
             SetTNarcissus(data[1]);
         }
+        if (data[0] == "PlayMusic") {
+            PlayMusic(data[1]);
+        }
     }
 
     void EchoHappy() {
@@ -167,6 +170,13 @@ public class NovelController : MonoBehaviour
         }
 
         layer.TransitionToTexture(tex, spd, smooth);
+    }
+
+    // Audio controller
+    public void PlayMusic(string trackName) {
+        AudioClip song = Resources.Load<AudioClip>("Audio/music/" + trackName);
+        if (song == null) print("null song");
+        AudioManager.instance.PlaySong(song);
     }
 
 }

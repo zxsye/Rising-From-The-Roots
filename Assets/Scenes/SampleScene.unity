@@ -255,7 +255,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -265,7 +265,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.3
   m_Text: Speech
 --- !u!222 &311201087
 CanvasRenderer:
@@ -691,7 +691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.014520834, y: 0.23900001}
   m_AnchorMax: {x: 0.17577085, y: 0.27933338}
-  m_AnchoredPosition: {x: -1.5, y: -0.44415283}
+  m_AnchoredPosition: {x: -1.5, y: -0.4441223}
   m_SizeDelta: {x: 2.2684326, y: -0.20880127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1036081998
@@ -1046,6 +1046,7 @@ GameObject:
   - component: {fileID: 1579582610}
   - component: {fileID: 1579582607}
   - component: {fileID: 1579582608}
+  - component: {fileID: 1579582611}
   m_Layer: 0
   m_Name: Testing
   m_TagString: Untagged
@@ -1106,17 +1107,36 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579582606}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2473950341fe64e63b6cca24c3e8b4e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Narcissus:
+    renderers:
+      renderer: {fileID: 0}
     characterName: Narcissus
     root: {fileID: 0}
   speech:
   - 'Hi I''m Narcissus! '
   - How are you?
+--- !u!114 &1579582611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579582606}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286f977d86dbb41899d8e9db6acb7433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 0
+  pitch: 0
+  clips: []
+  music:
+  - {fileID: 8300000, guid: ef5f28b8ab4684ad6914876e75b7529a, type: 3}
 --- !u!1 &1615427663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,6 +1351,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896365624}
   m_CullTransparentMesh: 1
+--- !u!1 &1903425486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903425487}
+  - component: {fileID: 1903425488}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1903425487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903425486}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 224.87024, y: 302.2373, z: 2809.9175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1994108397}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903425488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903425486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a7c61310d544cbdaf0bf3a30846553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songTransitionSpeed: 2
+  songSmoothTransitions: 1
 --- !u!1 &1916607824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1560,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 630.37506, y: 270.2727, z: -3407.4045}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1903425487}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
