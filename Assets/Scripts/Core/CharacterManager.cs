@@ -18,19 +18,17 @@ public class CharacterManager : MonoBehaviour
     // Easy lookup for characters
     public Dictionary<string, int> characterDictionary = new Dictionary<string, int>();
 
-    public 
-    void Awake() {
+    public void Awake() {
         instance = this;
     }
 
     // Try to get character by the name provided from the character list
-
     public Character GetCharacter(string characterName, bool createCharIfNotExist = true, bool enableCreatedCharacterOnStart = true)
     {
         int index = -1;
         if (characterDictionary.TryGetValue(characterName, out index)) {
-            print(index);
-            print(characters.Count);
+            // print(index);
+            // print(characters.Count);
             return characters[index];
         } else {
             return CreateCharacter(characterName, enableCreatedCharacterOnStart);

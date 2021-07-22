@@ -27,7 +27,9 @@ public class NovelController : MonoBehaviour
     }
 
     void HandleLine(string line) {
+        print("INPUT LINE: "+ line);
         string[] dialogueAndActions= line.Split('"');
+        print("INPUT LINE LENGTH: " + dialogueAndActions.Length);
 
         // 3 objects meeans dialogue.
         // 1 object means no dialogue. Only actions.
@@ -35,7 +37,6 @@ public class NovelController : MonoBehaviour
         if (dialogueAndActions.Length == 3) {
             HandleDialogue(dialogueAndActions[0], dialogueAndActions[1]);
             HandleEventsFromLine(dialogueAndActions[2]);
-
         } else {
             HandleEventsFromLine(dialogueAndActions[0]);
         }
@@ -69,7 +70,72 @@ public class NovelController : MonoBehaviour
     }
 
     void HandleEventsFromLine(string events) {
-        print("Handle event [" + events + "]"); // @todo
+        // print("Handle event [" + events + "]"); // @todo
+        string[] actions = events.Split(' ');
+
+        foreach(string action in actions) {
+            HandleAction(action);
+        }
+
+    }
+
+    void HandleAction(string action) {
+        print("Handle event [" + action + "]"); // @todo
+        // string[] dialogueAndActions = line.Split('"');
+
+        string[] data = action.Split('(',')');
+
+        if (data[0] == "setBackground") {
+            Command_SetLayerImage(data[1], BCFC.instance.background);
+            return;
+        }
+        if (data[0] == "setCinematic") {
+            Command_SetLayerImage(data[1], BCFC.instance.cinematic);
+            return;
+        }
+        if (data[0] == "setForeground") {
+            Command_SetLayerImage(data[1], BCFC.instance.foreground);
+            return;
+        }
+        if (data[0] == "turnOff") {
+            TurnOff(data[1]);
+        }
+        if (data[0] == "echoSad") {
+
+        }
+    }
+
+    void EchoHappy() {
+        Character c = CharacterManager.instance.GetCharacter("Echo");
+    }
+
+    void TurnOff(string characterName) {
+        Character character = CharacterManager.instance.GetCharacter(characterName);
+        print("Turning off: " + characterName);
+        character.TurnOnOff(false);
+    }
+
+
+    void Command_SetLayerImage(string data, BCFC.LAYER layer) {
+        string texName = data.Contains(",") ? data.Split(',')[0] : data;
+        Texture2D tex = Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;
+        float spd = 2f;
+        bool smooth = false;
+
+        if (data.Contains(",")) {
+            string[] parameters = data.Split(',');
+            foreach(string p in parameters) {
+                float fVal = 0;
+                bool bVal = false;
+                if (float.TryParse(p, out fVal))
+                    spd = fVal;
+                if (bool.TryParse(p, out bVal)) {
+                    smooth = bVal; continue;
+                }
+            }
+        }
+
+        layer.TransitionToTexture(tex, spd, smooth);
     }
 
 }

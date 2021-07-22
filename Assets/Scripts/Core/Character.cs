@@ -19,6 +19,14 @@ public class Character
             
     }
 
+    public void TurnOnOff(bool on) {
+        if (on) {
+            enabled = true;
+        } else {
+            enabled = false;
+        }
+    }
+
     public bool enabled {
         get{
             return root.gameObject.activeInHierarchy;
@@ -26,6 +34,23 @@ public class Character
             root.gameObject.SetActive(value);
         }
     }
+
+
+    // Begin transitioning images
+    public Sprite GetSprite(string spriteName) {
+        Sprite sprite = Resources.Load<Sprite>("Images/Characters/" + characterName + "_" + spriteName);
+        return sprite;
+    }
+
+    public void SetBody(string spriteName) {
+        renderers.bodyRenderer.sprite = GetSprite(spriteName);
+        
+    }
+
+
+
+    ////////////////////
+
 
     // Constructor
     public Character(string _name, bool enableOnStart = true) {
