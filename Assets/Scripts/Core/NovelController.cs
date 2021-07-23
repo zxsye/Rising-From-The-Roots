@@ -126,8 +126,20 @@ public class NovelController : MonoBehaviour
         if (data[0] == "PlayMusic") {
             PlayMusic(data[1]);
         }
+        if (data[0] == "credits") {
+            Credits();
+        }
     }
 
+    void Credits() {
+        TurnOff("Cerberus");
+        TurnOff("Narcissus");
+        TurnOff("Narcissus");
+        TurnOff("Echo");
+        Command_SetLayerImage("white", BCFC.instance.background);
+        PlayMusic("credits");
+
+    }
     void EchoHappy() {
         Character c = CharacterManager.instance.GetCharacter("Echo");
         c.SetSprite("happy");

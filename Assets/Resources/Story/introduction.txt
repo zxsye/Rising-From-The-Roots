@@ -85,3 +85,12 @@ Cerberus "The gods must have been watching. They are impressed by you and have r
 Echo "Oh… Cerberus, I can’t thank you enough."
 
 Cerberus "Don’t worry my sweet nymph, for now I can return to Hades and go for walkies finally! I hope you two the best of luck."
+
+Angela "Hi I'm Angela! I designed the backdrops and characters you see." credits()
+Jennifer C "Hi I'm Jennifer C, I helped out a bit with everything!"
+Jennifer G "Hey I'm Jennifer G, I composed most of the music with Johnny!"
+Jess "Hi I'm Jess, I worked on the boss battle you just played"
+Johnny "Henlo! I'm Johnny, I led the team and composed the music too."
+Rayman "Hi I'm Rayman, I built the rhythm game!"
+Sam "Hi I'm Sam, I built the platform game to get to the caves."
+Zi Lin "Hi I'm Zi Lin, I built the visual story board!"
