@@ -132,6 +132,10 @@ public class NC_afterrhythm : MonoBehaviour
         if (data[0] == "LoadScene") {
             LoadScene(data[1]);
         }
+        if (data[0] == "StopMusic") {
+            AudioManager.instance.PlaySong(null);
+        }
+        
     }
 
     void Credits() {

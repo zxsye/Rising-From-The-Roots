@@ -12,4 +12,5 @@ Cerberus "We did it! " setBackground(cave,false,1) PlayMusic(cerberus)
 "The garden will permanently trap him soon if we don’t start making our way now.! "
 +"He will become a flower and hang over this pond for eternity. " 
 "Honestly, not a bad place to be stuck for eternity "
-+"but if he transforms, you will never be able to be together! " LoadScene(PhaseOneScene)
++"but if he transforms, you will never be able to be together! " StopMusic()
+LoadScene(PhaseOneScene)

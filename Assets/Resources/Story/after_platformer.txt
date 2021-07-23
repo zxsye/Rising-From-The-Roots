@@ -13,4 +13,5 @@ EchoHappy()
 +"Try to match its harmonies with a melody by ringing the bell flowers over here. "
 "If you match it up correctly, the flower will become bound to you and be willing to grant you your wish. "
 +"I would help you, but I am useless at music. If I were better, you could call me WOOFgang Mozart! "
-+"But sadly, I am not. This one’s all yours!" LoadScene(RhythmScene)
++"But sadly, I am not. This one’s all yours!" StopMusic()
+LoadScene(RhythmScene)

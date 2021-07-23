@@ -53,4 +53,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2AfterPhase.unity
     guid: e842b3314786f4595912d680097c2412
+  - enabled: 1
+    path: Assets/Scenes/3AfterPhase.unity
+    guid: dd0cd7781eb4a42e891260baed74199a
+  - enabled: 1
+    path: Assets/Scenes/RhythmWinScreen.unity
+    guid: fea1648278ada4298ac31f50c0ad040a
+  - enabled: 1
+    path: Assets/Scenes/AfterRhythm.unity
+    guid: 5e0ac359355884c728a1547506ab87f6
   m_configObjects: {}

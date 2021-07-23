@@ -43,4 +43,5 @@ Cerberus "Hello Echo, I’ve been observing you from the underworld. You seem li
 "Hehe, he forgets that I can understand him sometimes. Such a BONE-head. Haha. "
 "Sorry, I got distracted again. "
 +"Where were we? Oh yes, the cave! "
-"Onwards we go my friend! "
+"Onwards we go my friend! " StopMusic()
+LoadScene(PlatformerScene)

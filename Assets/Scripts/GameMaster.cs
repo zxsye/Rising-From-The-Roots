@@ -7,7 +7,7 @@ public class GameMaster : MonoBehaviour
     public FillBar progressBar;
 
     public Beatmap beatmap;
-
+    public GameOver gameOverRhythm;
     public bool gameSuccessful;
     public bool GameSuccessful 
     {
@@ -24,6 +24,7 @@ public class GameMaster : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        Time.timeScale = 1;
         Screen.SetResolution(1920, 1080, true);
         progressBar = GameObject.Find("Slider").GetComponent<FillBar>(); 
         beatmap = GameObject.Find("Beatmap").GetComponent<Beatmap>(); 
@@ -36,6 +37,7 @@ public class GameMaster : MonoBehaviour
     void Update()
     {
         if (!gameEnding && beatmap.songFinished)
+        // if (true)
         {
             StartCoroutine("EndGame");
         } 
@@ -54,8 +56,12 @@ public class GameMaster : MonoBehaviour
     {
         gameEnding = true;
         if (progressBar.CurrentValue > successThreshold)
+        // if (true)
         {
             gameSuccessful = true;
+        }
+        if (!gameSuccessful) {
+            gameOverRhythm.Setup();
         }
         yield return new WaitForSeconds(2);
         Debug.Log("Game Successful: " + gameSuccessful);
@@ -63,5 +69,10 @@ public class GameMaster : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+
+        if (gameSuccessful) {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("RhythmWinScreen");
+        }
+
     }
 }

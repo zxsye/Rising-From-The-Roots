@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -322, y: 301}
-  m_SizeDelta: {x: 811.7582, y: 171.8334}
+  m_AnchoredPosition: {x: -322, y: 238.97046}
+  m_SizeDelta: {x: 811.7582, y: 295.8925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &25342764
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Stareye Atlas
+    m_LineSpacing: 1.3
+  m_Text: "Rising from \nthe Roots\n"
 --- !u!222 &25342765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -235,10 +235,10 @@ RectTransform:
   m_Father: {fileID: 2063379509}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -322, y: -58}
-  m_SizeDelta: {x: 335.3639, y: 373.3258}
+  m_AnchorMin: {x: 0.24325004, y: 0.20555553}
+  m_AnchorMax: {x: 0.42125005, y: 0.5443333}
+  m_AnchoredPosition: {x: 0, y: 6}
+  m_SizeDelta: {x: -6.6361084, y: 7.3258057}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &326921469
 GameObject:
