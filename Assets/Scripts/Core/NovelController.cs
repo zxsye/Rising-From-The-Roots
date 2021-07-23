@@ -53,8 +53,6 @@ public class NovelController : MonoBehaviour
         }
     }
 
-
-
     string cachedLastSpeaker = "";
     void HandleDialogue(string dialogueDetails, string dialogue) {
         string speaker = cachedLastSpeaker;
@@ -129,6 +127,9 @@ public class NovelController : MonoBehaviour
         if (data[0] == "credits") {
             Credits();
         }
+        if (data[0] == "LoadScene") {
+            LoadScene(data[1]);
+        }
     }
 
     void Credits() {
@@ -198,4 +199,7 @@ public class NovelController : MonoBehaviour
         AudioManager.instance.PlaySong(song);
     }
 
+    public void LoadScene(string title) {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(title);
+    }
 }

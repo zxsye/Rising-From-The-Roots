@@ -1,0 +1,16 @@
+Cerberus "Thank Zeus! We made it to the deepest cavern, here you should see the blessed bellflower at the end… " setBackground(cave_inside,false,1) PlayMusic(hopeful)
+EchoHappy()
++"Careful, the terrain that follows is known for its dangerous winds! "
++"Now where is that flower. You might have to take the lead on this one Echo, I have really bad eyesight. It’s a caNINE out of twenty. "
+"I think I might need glasses but I can’t find any that won’t just fall off my face because my ears are up so high. " 
+EchoNeutral()
++"Now the flower, I think it glows when it senses someone with a deep seated desire… *squints* "
++"Look, there it is! "
+EchoHappy()
+
+"WAIT! You mustn't cut it, for its power comes from its natural swaying rhythm. " EchoSurprised() PlayMusic(flower)
++"Do you hear that, Echo? Listen closely to the wind... " EchoNeutral() PlayMusic(flower)
++"Try to match its harmonies with a melody by ringing the bell flowers over here. "
+"If you match it up correctly, the flower will become bound to you and be willing to grant you your wish. "
++"I would help you, but I am useless at music. If I were better, you could call me WOOFgang Mozart! "
++"But sadly, I am not. This one’s all yours!" LoadScene(RhythmScene)

@@ -1,6 +1,6 @@
 Echo "I am Echo, nymph of Mount Cithaeron. " setBackground(pond,false,1) PlayMusic(main)
 +"For years, I have been in love with Narcissus. "
-+"I watch as he climbs the mountain, jests with his friends, picks fruit off the apple trees."
++"I watch as he climbs the mountain, jests with his friends, picks fruit off the apple trees. "
 +"I sing him tunes that meld with the wind, never daring to approach him. "
 "On this mountain, I tend to my trees, care for injured animals, and purify the streams and ponds that flow through. "
 +"Occasionally, I also do favours for Zeus, chatting to Hera, and feeding her extravagant feasts while he is off galavanting with other women. "
@@ -25,98 +25,22 @@ Hera "SILENCE, NYMPH! " EchoSurprised()
 
 Cerberus "Hello Echo, I’ve been observing you from the underworld. You seem like you need help saving your love? " EchoNeutral() SetTNarcissus(root)
 +"Hades is too busy to take me on my River Styx walk today so I guess I’ll help you instead! " PlayMusic(cerberus)
-+"You should come visit River Styx some day… it’s really PAWsome." 
-+"HAHAHAHAHAHAHA!"
-+"No?"
-+"Oh yeah I guess you can’t really talk. Oops. I’m definitely going to forget that."
+"You should come visit River Styx some day… it’s really PAWsome. " 
++"HAHAHAHAHAHAHA! "
++"No? "
+"Oh yeah I guess you can’t really talk. Oops. I’m definitely going to forget that. "
 "Look, he has already begun to sprout roots. " 
-+"That isn’t PAWmising. Sorry."
-+"We must hurry now before it is too late!"
++"That isn’t PAWmising. Sorry. "
++"We must hurry now before it is too late! "
 
 "To save your precious Narcissus, we must journey to find the bell flower that was blessed by Caerus—God of Opportunity and Luck. " PlayMusic(hopeful)
 +"Legend says it grants one wish to any that can traverse the dangerous cave system which lies beneath Mount Olympus. " 
 "Any who dares to undergo such danger and succeeds is deemed worthy by Caerus as the journey shows their dedication and bravery. " 
 +"Let’s go to the caves near Olympus now before it’s too late. " setBackground(cave_entrance,false,1) turnOff(TNarcissus)
-"Look! This is the entrance to Mount Olympus."
-+"Dodge the monsters and journey to the heart of Mount Olympus! "
-+"Hades might have let slip that that is where the flower lives."
-+"Hehe, he forgets that I can understand him sometimes. Such a BONE-head. Haha."
-+"Sorry, I got distracted again."
-+"Where were we? Oh yes, the cave!"
-"Onwards we go my friend!"
-
-
-"Thank Zeus! We made it to the deepest cavern, here you should see the blessed bellflower at the end… " setBackground(cave_inside,false,1)
-EchoHappy()
-+"Careful, the terrain that follows is known for its dangerous winds! "
-+"Now where is that flower. You might have to take the lead on this one Echo, I have really bad eyesight. It’s a caNINE out of twenty."
-+"I think I might need glasses but I can’t find any that won’t just fall off my face because my ears are up so high." 
-EchoNeutral()
-+"Now the flower, I think it glows when it senses someone with a deep seated desire… *squints*"
-+"Look, there it is! "
-EchoHappy()
-
-"WAIT! You mustn't cut it, for its power comes from its natural swaying rhythm. " EchoSurprised() PlayMusic(flower)
-+"Do you hear that, Echo? Listen closely to the wind... " EchoNeutral() PlayMusic(flower)
-+"Try to match its harmonies with a melody by ringing the bell flowers over here. "
-+If you match it up correctly, the flower will become bound to you and be willing to grant you your wish."
-+"I would help you, but I am useless at music. If I were better, you could call me WOOFgang Mozart!"
-+"But sadly, I am not. This one’s all yours!"
-
-
-"We did it! " setBackground(cave,false,1) PlayMusic(cerberus)
-+"I haven’t felt this alive since Briareus played fetch with me—He has a hundred hands so you can just imagine what a thrill it is to chase a hundred balls and sticks at once! " EchoHappy()
-+"This is so much better than going for a walk on River Styx! Hades is cool and all but he walks sooooo slowly."
-+"Like an old man. Well, I guess he is eons old."
-+"Now, we can return to your love and you can finally be together!"
-+"The journey should be a lot easier this time now that we have the blessing of the gods with us."
-"Look, there he is " setBackground(pond,false,1) SetTNarcissus(flowers)
-
-"Oh Hades, flowers have started to engulf him. " PlayMusic(main)
-+"My dear Echo, you must reach him, you must! " 
-+"We have journeyed for so long, endured such hardship. Do not stop until you reach him! " 
-+"The garden will permanently trap him soon if we don’t start making our way now.! "
-+"He will become a flower and hang over this pond for eternity." 
-+"Honestly, not a bad place to be stuck for eternity but if he transforms, you will never be able to be together!"
-
-"You know, my noble companion, the wishing flower grants any wish at all. " PlayMusic(hopeful)
-+"I’ve heard you sing melodies that rival the muses and weave stories of heroines and battles for your friends. "
-"Perhaps now is the chance for me to ask… wouldn’t you rather get back your own voice? " 
-+"Perhaps this Narcissus isn’t worth your love at all, in fact, who knows if the flower will work at all? "
-
-"Wow you’re almost there! Look, leaves have started to consume his legs. " 
-+"We must hurry, but… again I must ask you, are you sure this is what you want? " 
-
-"Yay! We’re here, quickly… rush to him now if you truly wish to be with him. " 
-+"But wait, why’s the wind so suddenly strong? "
-+"And do you hear that… " PlayMusic(flower)
-
-"The flower! I think it’s doing something. " 
-"Focus on your deepest desire now, so that the flower will grant you your truest wish! "
-
-Narcissus "Wow. All my life I have been the one who has been admired." turnOff(TNarcissus) PlayMusic(main)
-"The most handsome, the most intelligent, the richest, and the fittest." 
-"Never have I met someone else I admired as much as others have admired me." 
-"Your bravery and persistence have touched my heart and I am honoured to be standing before you, my fair maiden."
-
-"For all that you have done for me, thank you."
-
-Echo "You’re welcome… my love... WAIT that was out loud! I have my voice back!" 
-
-Cerberus "The gods must have been watching. They are impressed by you and have rewarded you for your persistence, bravery and selflessness!" 
-
-Echo "Oh… Cerberus, I can’t thank you enough."
-
-Cerberus "Don’t worry my sweet nymph, for now I can return to Hades and go for walkies finally! I hope you two the best of luck. "
-+"I will be back to visit you often so you better keep some bones around here. "
-+"And some fish. I quite like fish. But real fish please, not the undead kind like in the Underworld. "
-+"They’re too bony and smell a bit off. I shall be off now! "
-
-Angela "Hi I'm Angela! I designed the backdrops and characters you see." credits()
-Jennifer C "Hi I'm Jennifer C, I helped out a bit with everything!"
-Jennifer G "Hey I'm Jennifer G, I composed most of the music with Johnny!"
-Jess "Hi I'm Jess, I worked on the boss battle you just played"
-Johnny "Henlo! I'm Johnny, I led the team and composed the music too."
-Rayman "Hi I'm Rayman, I built the rhythm game!"
-Sam "Hi I'm Sam, I built the platform game to get to the caves."
-Zi Lin "Hi I'm Zi Lin, I built the visual story board!"
+"Look! This is the entrance to Mount Olympus. "
++"Dodge the monsters and journey to the heart of Mount Olympus!  "
++"Hades might have let slip that that is where the flower lives. "
+"Hehe, he forgets that I can understand him sometimes. Such a BONE-head. Haha. "
+"Sorry, I got distracted again. "
++"Where were we? Oh yes, the cave! "
+"Onwards we go my friend! "

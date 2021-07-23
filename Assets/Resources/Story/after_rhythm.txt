@@ -1,0 +1,15 @@
+Cerberus "We did it! " setBackground(cave,false,1) PlayMusic(cerberus)
++"I haven’t felt this alive since Briareus played fetch with me—He has a hundred hands so you can just imagine what a thrill it is to chase a hundred balls and sticks at once! " EchoHappy()
+"This is so much better than going for a walk on River Styx! Hades is cool and all but he walks sooooo slowly. "
++"Like an old man. Well, I guess he is eons old. "
++"Now, we can return to your love and you can finally be together! "
++"The journey should be a lot easier this time now that we have the blessing of the gods with us. "
+"Look, there he is! " setBackground(pond,false,1) SetTNarcissus(flowers)
+
+"Oh Hades, flowers have started to engulf him. " PlayMusic(main)
++"My dear Echo, you must reach him, you must! " 
++"We have journeyed for so long, endured such hardship. Do not stop until you reach him! " 
+"The garden will permanently trap him soon if we don’t start making our way now.! "
++"He will become a flower and hang over this pond for eternity. " 
+"Honestly, not a bad place to be stuck for eternity "
++"but if he transforms, you will never be able to be together! " LoadScene(PhaseOneScene)

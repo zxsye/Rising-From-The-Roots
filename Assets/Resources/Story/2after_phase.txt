@@ -1,0 +1,3 @@
+Cerberus "Wow you’re almost there! Look, leaves have started to consume his legs. " PlayMusic(hopeful)
++"We must hurry, but… again I must ask you, are you sure this is what you want? "
+StopMusic() LoadScene(PhaseThreeScene)

@@ -1,0 +1,33 @@
+Cerberus "Yay! We’re here, quickly… rush to him now if you truly wish to be with him. " PlayMusic(hopeful) SetTNarcissus(flowers) SetChar(Echo)
++"But wait, why’s the wind so suddenly strong? "
++"And do you hear that… " PlayMusic(flower)
+
+"The flower! I think it’s doing something. " 
+"Focus on your deepest desire now, so that the flower will grant you your truest wish! "
+
+Narcissus "Wow. All my life I have been the one who has been admired. " turnOff(TNarcissus)
+"The most handsome, the most intelligent, the richest, and the fittest. " PlayMusic(main)
+"Never have I met someone else I admired as much as others have admired me. " 
+"Your bravery and persistence have touched my heart and I am honoured to be standing before you, my fair maiden. "
+
+"For all that you have done for me, thank you. "
+
+Echo "You’re welcome… my love... WAIT that was out loud! I have my voice back! " 
+
+Cerberus "The gods must have been watching. They are impressed by you and have rewarded you for your persistence, bravery and selflessness! " 
+
+Echo "Oh… Cerberus, I can’t thank you enough. "
+
+Cerberus "Don’t worry my sweet nymph, for now I can return to Hades and go for walkies finally! I hope you two the best of luck. "
++"I will be back to visit you often so you better keep some bones around here. "
+"And some fish. I quite like fish. But real fish please, not the undead kind like in the Underworld. "
++"They’re too bony and smell a bit off. I shall be off now! "
+
+Angela "Hi I'm Angela! I designed the backdrops and characters you see. " credits()
+Jennifer C "Hi I'm Jennifer C, I helped out a bit with everything, including coding, music, and art! "
+Jennifer G "Hey I'm Jennifer G, I composed most of the music with Johnny and made pixel art! "
+Jess "Hi I'm Jess, I worked on the boss battle you just played "
+Johnny "Henlo! I'm Johnny, I led the team and composed the music too. "
+Rayman "Hi I'm Rayman, I built the rhythm game! "
+Sam "Hi I'm Sam, I built the platform game to get to the caves. "
+Zi Lin "Hi I'm Zi Lin, I built the visual story board! "

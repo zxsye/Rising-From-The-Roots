@@ -1,0 +1,46 @@
+Echo "I am Echo, nymph of Mount Cithaeron. " setBackground(pond,false,1) PlayMusic(main)
++"For years, I have been in love with Narcissus. "
++"I watch as he climbs the mountain, jests with his friends, picks fruit off the apple trees. "
++"I sing him tunes that meld with the wind, never daring to approach him. "
+"On this mountain, I tend to my trees, care for injured animals, and purify the streams and ponds that flow through. "
++"Occasionally, I also do favours for Zeus, chatting to Hera, and feeding her extravagant feasts while he is off galavanting with other women. "
+"Now, let me take you around my moun– "
+
+Hera "SILENCE, NYMPH! " EchoSurprised()
++"I have heard about all my husband’s...antics. "
++"And the part you’ve played in them. " 
++"That was rather foolish. " 
++"You shall pay for what you have done. " 
++"For taking my husband away from me, I shall take your love away from you. " 
++"That’s him isn’t it. " SetTNarcissus(sit)
+
+"Every day, Narcissus will fall more and more in love with himself as he glances at his reflection in that pond. " 
++"Then, after three days, he shall turn into a flower, to hang over the pond and his reflection for all of eternity. " 
+
++"And you, my dear. " 
++"Well, I think we’re done talking to each other. " 
++"Literally. " 
+"From now on, you shall be unable to speak any words of your own. " 
++"I hope you’ve learned your lesson. " turnOff(Hera)
+
+Cerberus "Hello Echo, I’ve been observing you from the underworld. You seem like you need help saving your love? " EchoNeutral() SetTNarcissus(root)
++"Hades is too busy to take me on my River Styx walk today so I guess I’ll help you instead! " PlayMusic(cerberus)
+"You should come visit River Styx some day… it’s really PAWsome. " 
++"HAHAHAHAHAHAHA! "
++"No? "
+"Oh yeah I guess you can’t really talk. Oops. I’m definitely going to forget that. "
+"Look, he has already begun to sprout roots. " 
++"That isn’t PAWmising. Sorry. "
++"We must hurry now before it is too late! "
+
+"To save your precious Narcissus, we must journey to find the bell flower that was blessed by Caerus—God of Opportunity and Luck. " PlayMusic(hopeful)
++"Legend says it grants one wish to any that can traverse the dangerous cave system which lies beneath Mount Olympus. " 
+"Any who dares to undergo such danger and succeeds is deemed worthy by Caerus as the journey shows their dedication and bravery. " 
++"Let’s go to the caves near Olympus now before it’s too late. " setBackground(cave_entrance,false,1) turnOff(TNarcissus)
+"Look! This is the entrance to Mount Olympus. "
++"Dodge the monsters and journey to the heart of Mount Olympus!  "
++"Hades might have let slip that that is where the flower lives. "
+"Hehe, he forgets that I can understand him sometimes. Such a BONE-head. Haha. "
+"Sorry, I got distracted again. "
++"Where were we? Oh yes, the cave! "
+"Onwards we go my friend! "

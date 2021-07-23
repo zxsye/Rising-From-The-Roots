@@ -1,0 +1,5 @@
+Cerberus "You know, my noble companion, the wishing flower grants any wish at all. " PlayMusic(hopeful)
++"I’ve heard you sing melodies that rival the muses and weave stories of heroines and battles for your friends. "
+"Perhaps now is the chance for me to ask… wouldn’t you rather get back your own voice? " 
++"Perhaps this Narcissus isn’t worth your love at all, in fact, who knows if the flower will work at all? " StopMusic()
+LoadScene(PhaseTwoScene)
